@@ -25,9 +25,6 @@ Firefox supports a number of _Mozilla extensions to [CSS](/en-US/docs/Web/CSS)_,
 - {{CSSxRef("-moz-image-region")}} {{deprecated_inline}}
 - {{CSSxRef("-moz-orient")}} {{non-standard_inline}}
 - {{CSSxRef("font-smooth", "-moz-osx-font-smoothing")}} {{non-standard_inline}}
-- {{CSSxRef("overflow-clip-box")}} {{experimental_inline}} (To use inside the UA spreadsheet)
-- {{CSSxRef("overflow-clip-box-block")}} {{experimental_inline}} (To use inside the UA spreadsheet)
-- {{CSSxRef("overflow-clip-box-inline")}} {{experimental_inline}} (To use inside the UA spreadsheet)
 - {{CSSxRef("-moz-user-focus")}} {{non-standard_inline}}
 - {{CSSxRef("-moz-user-input")}} {{non-standard_inline}}
 - {{CSSxRef("user-modify", "-moz-user-modify")}} {{non-standard_inline}}
@@ -51,7 +48,7 @@ Firefox supports a number of _Mozilla extensions to [CSS](/en-US/docs/Web/CSS)_,
 
 ### B
 
-- {{CSSxRef("backface-visibility", "-moz-backface-visibility")}} {{Deprecated_Inline}} (No longer supported; use the standard {{CSSxRef("backface-visibility")}})
+- {{CSSxRef("backface-visibility", "-moz-backface-visibility")}} {{Deprecated_Inline}} (Prefixed version still supported)
 - {{CSSxRef("background-clip", "-moz-background-clip")}} {{deprecated_inline}}
 - {{CSSxRef("background-origin", "-moz-background-origin")}} {{deprecated_inline}}
 - {{CSSxRef("box-decoration-break", "-moz-background-inline-policy")}} {{deprecated_inline}} (No longer supported; use the standard {{CSSxRef("box-decoration-break")}})
@@ -102,8 +99,8 @@ Firefox supports a number of _Mozilla extensions to [CSS](/en-US/docs/Web/CSS)_,
 
 - {{CSSxRef("padding-inline-end", "-moz-padding-end")}} {{Deprecated_Inline}} (No longer supported; use the standard {{CSSxRef("padding-inline-end")}})
 - {{CSSxRef("padding-inline-start", "-moz-padding-start")}} {{Deprecated_Inline}} (No longer supported; use the standard {{CSSxRef("padding-inline-start")}})
-- {{CSSxRef("perspective", "-moz-perspective")}} {{Deprecated_Inline}} (No longer supported; use the standard {{CSSxRef("perspective")}})
-- {{CSSxRef("perspective-origin", "-moz-perspective-origin")}} {{Deprecated_Inline}} (No longer supported; use the standard {{CSSxRef("perspective-origin")}})
+- {{CSSxRef("perspective", "-moz-perspective")}} {{Deprecated_Inline}} (Prefixed version still supported)
+- {{CSSxRef("perspective-origin", "-moz-perspective-origin")}} {{Deprecated_Inline}} (Prefixed version still supported)
 - {{CSSxRef("pointer-events")}} {{Experimental_Inline}} (Applying to more than SVG)
 
 ### T–U
@@ -114,9 +111,9 @@ Firefox supports a number of _Mozilla extensions to [CSS](/en-US/docs/Web/CSS)_,
 - {{CSSxRef("text-decoration-line", "-moz-text-decoration-line")}} {{deprecated_inline}}
 - {{CSSxRef("text-decoration-style", "-moz-text-decoration-style")}} {{deprecated_inline}}
 - {{CSSxRef("text-size-adjust", "-moz-text-size-adjust")}} {{Experimental_Inline}}
-- {{CSSxRef("transform", "-moz-transform")}} {{Deprecated_Inline}} (No longer supported; use the standard {{CSSxRef("transform")}})
-- {{CSSxRef("transform-origin", "-moz-transform-origin")}} {{Deprecated_Inline}} (No longer supported; use the standard {{CSSxRef("transform-origin")}})
-- {{CSSxRef("transform-style", "-moz-transform-style")}} {{Deprecated_Inline}} (No longer supported; use the standard {{CSSxRef("transform-style")}})
+- {{CSSxRef("transform", "-moz-transform")}} {{Deprecated_Inline}} (Prefixed version still supported)
+- {{CSSxRef("transform-origin", "-moz-transform-origin")}} {{Deprecated_Inline}} (Prefixed version still supported)
+- {{CSSxRef("transform-style", "-moz-transform-style")}} {{Deprecated_Inline}} (Prefixed version still supported)
 - {{CSSxRef("transition", "-moz-transition")}} {{Deprecated_Inline}} (Prefixed version still supported)
 - {{CSSxRef("transition-delay", "-moz-transition-delay")}} {{Deprecated_Inline}} (Prefixed version still supported)
 - {{CSSxRef("transition-duration", "-moz-transition-duration")}} {{Deprecated_Inline}} (Prefixed version still supported)
