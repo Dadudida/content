@@ -7,7 +7,7 @@ status:
 browser-compat: api.ScreenDetailed
 ---
 
-{{APIRef("Window Management API")}}{{SeeCompatTable}}
+{{APIRef("Window Management API")}}{{SeeCompatTable}}{{securecontext_header}}
 
 The **`ScreenDetailed`** interface of the [Window Management API](/en-US/docs/Web/API/Window_Management_API) represents detailed information about one specific screen available to the user's device.
 
@@ -35,6 +35,13 @@ _Inherits properties from its parent, {{DOMxRef("Screen")}}._
   - : A number representing the x-coordinate (left-hand edge) of the total screen area.
 - {{domxref("ScreenDetailed.top", "top")}} {{ReadOnlyInline}} {{Experimental_Inline}}
   - : A number representing the y-coordinate (top edge) of the total screen area.
+
+## Events
+
+_Inherits events from its parent, {{DOMxRef("Screen")}}._
+
+- `change` {{experimental_inline}}
+  - : Fired on a specific screen when any property of the screen changes — width or height, available width or available height, color depth, or orientation, screen position and available screen position, device pixel ratio, label or screen's designation.
 
 ## Examples
 
