@@ -22,7 +22,7 @@ Before we look at the various privacy and security features available to use on 
 
 It is hard to talk about privacy without also talking about security — they are closely related, and you can't really create privacy-respecting websites without good security. Therefore, we shall define both.
 
-- **Privacy** refers to the act of giving users the right to control how their data is collected, stored, and used, and not using it irresponsibly. For example, you should clearly communicate to your users what data you are collecting, with whom it will be shared with, and how it will be used. Users must be given a chance to consent to your terms of data usage, have access to the items of their data you are storing, and delete it if they no longer wish you to have it. You must also comply with your own terms: nothing erodes user trust like having their data used and shared in ways they never consented to. And this isn't just ethically wrong; it could be against the law. Many parts of the world now have legislation that protects consumer privacy rights (for example the EU's [GDPR](https://gdpr.eu/)).
+- **Privacy** refers to the act of giving users the right to control how their data is collected, stored, and used, and not using it irresponsibly. For example, you should clearly communicate to your users what data you are collecting, who it will be shared with, and how it will be used. Users must be given a chance to consent to your terms of data usage, have access to all of their data that you are storing, and delete it if they no longer wish you to have it. You must also comply with your own terms: nothing erodes user trust like having their data used and shared in ways they never consented to. And this isn't just ethically wrong; it could be against the law. Many parts of the world now have legislation that protects consumer privacy rights (for example the EU's [GDPR](https://gdpr.eu/)).
 
 - **Security** is the act of keeping private data and systems protected against unauthorized access. This includes both company (internal) data, and user and partner (external) data. It is no use having a robust privacy policy that makes your users trust you if your security is weak and malicious parties can steal their data anyway.
 
@@ -125,8 +125,8 @@ Some of the most developed parts of the privacy sandbox project are as follows:
 
 - [Cookies Having Independent Partitioned State (CHIPS)](/en-US/docs/Web/Privacy/Partitioned_cookies)
   - : Also known as **partitioned cookies**, CHIPs allows developers to opt a cookie into partitioned storage, with a separate cookie jar per top-level site.
-- [First-party sets](https://developer.chrome.com/docs/privacy-sandbox/first-party-sets/)
-  - : A mechanism for a company to declare relationships between different origins. Supporting browsers will then allow limited third-party cookie access across those origins for specific purposes.
+- [Related website sets](/en-US/docs/Web/API/Storage_Access_API/Related_website_sets)
+  - : A mechanism for a company to declare relationships between different sites. Supporting browsers will then allow limited third-party cookie access across those sites for specific purposes, via the [Storage Access API](/en-US/docs/Web/API/Storage_Access_API).
 - Third-party cookie default
   - : Chrome does not yet block third-party cookies by default, but this can be set by users in Chrome settings.
 
@@ -203,7 +203,7 @@ Earlier on we discussed tracking, and some of the unethical purposes they are us
 Also recall from earlier that browsers are implementing a number of technologies to limit the usage of tracking cookies, especially cross-site cookies, with the eventual aim of removing them altogether. It is a good idea to prepare for this, by limiting the amount of tracking activities you rely on, and/or implementing desired information persistence in other ways. For example:
 
 - Use an alternative client-side storage mechanism such as [Web Storage](/en-US/docs/Web/API/Web_Storage_API) to persist data. This does have the downside that the data is stored per-origin, so it can't be shared.
-- Use a technology such as [IFrame credentialless](/en-US/docs/Web/Security/IFrame_credentialless), [First-party sets](https://developer.chrome.com/docs/privacy-sandbox/first-party-sets/) and/or the [Storage access API](/en-US/docs/Web/API/Storage_Access_API) to allow your sites to opt in to using cross-site cookies in a safe, controlled way, or block them altogether. These currently have limited browser support.
+- Use a technology such as the [Storage Access API](/en-US/docs/Web/API/Storage_Access_API) to allow your sites to opt-in to using cross-site cookies in a safe and controlled way.
 - Use a server-side solution for data persistence.
 
 > **Note:** To reiterate what we said earlier, make sure you clearly communicate to your users what you are doing via your privacy policy, allow them to opt-in, and easily delete their data if they change their mind at a later date.
