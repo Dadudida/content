@@ -43,7 +43,7 @@ To identify your PWA, the JSON must include a `name` or `short_name` member, or 
 When both the `name` and `short_name` are present, the `name` is used in most instances, with the `short_name` used when there is a limited space to display the application name.
 
 - [`description`](/en-US/docs/Web/Manifest/description)
-  - : Explanation of what the application does. It provides an [accessible description](/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-description) of the application's purpose and function.
+  - : Explanation of what the application does. It provides an {{glossary("accessible description")}} of the application's purpose and function.
 
 ### Task
 
@@ -215,13 +215,13 @@ The `<link>` element is most commonly used to link to stylesheets and, with PWAs
 
 When using the `.webmanifest` extension, set `type="application/manifest+json"` if your server doesn't support that MIME type.
 
-#### Task
+### Task
 
 Save the manifest file that you have created in the steps above, then link to it from the `index.html` file.
 
 Optionally, link to a shortcut icon from your HTML as well.
 
-#### Example solution
+### Example solution
 
 The {{HTMLelement("head")}} of `index.html` may now look similar to:
 
@@ -236,7 +236,7 @@ The {{HTMLelement("head")}} of `index.html` may now look similar to:
 </head>
 ```
 
-View the [`cycletracker.json` file](https://mdn.github.io/pwa-examples/cycletracker/Manifest_file/cycletracker.json) and view the [project source code](https://github.com/mdn/pwa-examples/tree/master/cycletracker/Manifest_file) on GitHub.
+View the [`cycletracker.json` file](https://mdn.github.io/pwa-examples/cycletracker/manifest_file/cycletracker.json) and view the [project source code](https://github.com/mdn/pwa-examples/blob/main/cycletracker/manifest_file/) on GitHub.
 
 With a manifest file, Safari will recognize your site as a web app. For the web app to be a full PWA, we will still need to add a service worker.
 
